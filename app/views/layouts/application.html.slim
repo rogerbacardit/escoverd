@@ -14,34 +14,35 @@ html lang="en"
 
 
   body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container-fluid
+    .container
+      .navbar
+        .navbar-inner
           a.btn.btn-navbar data-target=".nav-collapse" data-toggle="collapse"
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand href="#"AmvWeb
+          .brand Escoverd
           .container-fluid.nav-collapse
             ul.nav
-              li= link_to "Link 1", "/path1"
-              li= link_to "Link 2", "/path2"
-              li= link_to "Link 3", "/path3"
+              li= link_to "Tienda", "/tienda"
+              li= link_to "Servicios", "/servicio"
+              li= link_to "Conacto", "/contacto"
+              li= link_to "Anuncios", "/anuncios"
 
-    .container-fluid
+      .span6.fistspan
+        .well.sidebar-nav
 
-      .row-fluid
-        .span3
-          .well.sidebar-nav
-            ul.nav.nav-list
-              li.nav-header Sidebar
-              li= link_to "Link 1", "/path1"
-              li= link_to "Link 2", "/path2"
-              li= link_to "Link 3", "/path3"
-        .span9
-          = yield
-
-      footer
-        p &copy; Company 2012
+      .span6.lastspan
+        .well.sidebar-nav
+          ul.nav.nav-list
+            li.nav-header Sidebar
+            li= link_to "Link 1", "/path1"
+            li= link_to "Link 2", "/path2"
+            li= link_to "Link 3", "/path3"
+        /*.span9*/
+        /*  = yield*/
+      .span12
+        footer
+          p &copy; Company 2012
 
     = javascript_include_tag "application"

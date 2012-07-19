@@ -22,11 +22,15 @@ html lang="en"
           span.icon-bar
         .brand Escoverd
         .container-fluid.nav-collapse
-          ul.nav
-            li= link_to "Tienda", "/tienda"
-            li= link_to "Servicios", "/servicio"
-            li= link_to "Conacto", "/contacto"
-            li= link_to "Anuncios", "/anuncios"
+          -navbar = yield(:navbar)
+          -unless navbar.empty?
+            ==yield(:navbar)
+          -else
+            ul.nav
+              li= link_to "Tienda", "/tienda.html"
+              li= link_to "Servicios", "/servicio"
+              li= link_to "Conacto", "/contacto"
+              li= link_to "Anuncios", "/anuncios"
 
       .span6.fistspan
 
@@ -34,6 +38,7 @@ html lang="en"
         ul.nav.nav-list
           h1  L'Escò verd
           h3  Decoración y Muebles Rusticos
+        ==yield
       .span12
         footer
           p &copy; Company 2012

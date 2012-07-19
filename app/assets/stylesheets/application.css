@@ -5,7 +5,7 @@
  *= require_self
  *= require bootstrap_and_overrides
  *= require public
- *= require layout
  *= require animation
  *= require contact_form
+ *= require layout
 */

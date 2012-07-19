@@ -36,6 +36,7 @@ body
 
 
 #nav
+  color: white
   z-index: 80
   position: fixed
   top: 0px
@@ -57,21 +58,28 @@ body
       display: block
       padding-left: 20px
       text-transform: uppercase
-      +transition(background-color, 0.15s)
+      // +transition(background-color, 0.15s)
       &.selected, &.selected:hover
-        background: rgba(255,255,255,0.8)
-        color: #000
-      &:hover
-        background: rgba(255,255,255,0.1)
-        +transition(background-color, 0.3s)
+        background: white
+        color: white
+      // &:hover
+      //   background: rgba(255,255,255,0.1)
+      //   +transition(background-color, 0.3s)
+.navbar ul.nav li.active a
+  color: red
+  background-color: white
+  &:hover
+    color: red
+    background-color: white
+    text-decoration: underline
 
-  ul.contact
-    font-size: 13px
-    position: absolute
-    left: 6px
-    bottom: 0px
-    width: 240px
-    margin-top: 65px
+ul.contact
+  font-size: 13px
+  position: absolute
+  left: 6px
+  bottom: 0px
+  width: 240px
+  margin-top: 65px
 
 #logo
   a
@@ -117,7 +125,12 @@ body
 
 .span6
   height: 378px
+  .nav-list
+    text-align: right
 
 .span12
   margin-top: 20px
   margin-left: 0px
+
+.linksout
+  color: red

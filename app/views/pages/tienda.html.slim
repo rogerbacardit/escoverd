@@ -1,46 +1,52 @@
--content_for :navbar do
-  .container-fluid.nav-collapse
-    ul.nav
-      li.active= link_to "Tienda", "/tienda.html"
-      li= link_to "Quienes somos", "/quienesomos.html"
-      li= link_to "Servicios", "/servicio.html"
-      li= link_to "Conacto", "/contacto.html"
-      li= link_to "Anuncios", "/anuncios.html"
+.lastspangallery
+  -content_for :navbar do
+    .container-fluid.nav-collapse
+      ul.nav
+        li.active= link_to "Tienda", "/tienda.html"
+        li= link_to "Quienes somos", "/quienesomos.html"
+        li= link_to "Servicios", "/servicio.html"
+        li= link_to "Conacto", "/contacto.html"
+        li= link_to "Anuncios", "/anuncios.html"
 
-ul.thumbnails
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
-  li.span3
-    a.thumbnail href="#"
-      img src="http://placehold.it/260x180"
+  ul.thumbnails
+    li.span3
+      a.thumbnail href="#" onClick="change_pic('http://placehold.it/260x180')"
+        img src="http://placehold.it/260x180"
+    li.span3
+      a.thumbnail href="#" onClick="change_pic('http://ifdb.co/images/inga_gracin/6980/large')"
+        img src="http://ifdb.co/images/inga_gracin/6980/large"
+    li.span3
+      a.thumbnail href="#" onClick="change_pic('http://placehold.it/260x180')"
+        img src="http://placehold.it/260x180"
+    li.span3
+      a.thumbnail href="#"
+        img src="http://placehold.it/260x180"
+    li.span3
+      a.thumbnail href="#" onClick="change_pic('url_a_la_image_gran')"
+        img src="url_del_thumbnail"
+    li.span3
+      a.thumbnail href="#"
+        img src="http://placehold.it/260x180"
+    li.span3
+      a.thumbnail href="#"
+        img src="http://placehold.it/260x180"
+    li.span3
+      a.thumbnail href="#"
+        img src="http://placehold.it/260x180"
+    li.span3
+      a.thumbnail href="#"
+        img src="http://placehold.it/260x180"
+    li.span3
+      a.thumbnail href="#"
+        img src="http://placehold.it/260x180"
+    li.span3
+      a.thumbnail href="#"
+        img src="http://placehold.it/260x180"
+    li.span3
+      a.thumbnail href="#"
+        img src="http://placehold.it/260x180"
+
+javascript:
+  function change_pic(pic_url){
+    $('.fistspan').css('background-image', "url("+pic_url+")");
+  }

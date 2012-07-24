@@ -4,8 +4,15 @@
       li= link_to "Tienda", "/tienda.html"
       li= link_to "Quienes somos", "/quienesomos.html"
       li= link_to "Servicios", "/servicio.html"
-      li.active= link_to "Conacto", "/contacto.html"
+      li.active= link_to "Contacto", "/contacto.html"
       li= link_to "Anuncios", "/anuncios.html"
+
+  -content_for :big_sheep do
+    .span6.map
+      iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=aribau,+61,+barcelona&amp;aq=&amp;sll=40.396764,-3.713379&amp;sspn=15.715822,12.722168&amp;ie=UTF8&amp;hq=&amp;hnear=Carrer+d'Aribau,+61,+08011+Barcelona,+Catalunya&amp;t=m&amp;z=14&amp;ll=41.388597,2.158913&amp;output=embed"
+        small
+          a href="https://maps.google.es/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=aribau,+61,+barcelona&amp;aq=&amp;sll=40.396764,-3.713379&amp;sspn=15.715822,12.722168&amp;ie=UTF8&amp;hq=&amp;hnear=Carrer+d'Aribau,+61,+08011+Barcelona,+Catalunya&amp;t=m&amp;z=14&amp;ll=41.388597,2.158913" style="color:#0000FF;text-align:left"
+          span View Larger Map
 
 ul.contactlist
   h1  L'Escò verd

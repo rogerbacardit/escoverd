@@ -38,7 +38,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'jquery-rails'
-  gem "compass", ">= 0.12.alpha"
+  gem "compass-rails"
   gem 'fancybox-rails', git: 'https://github.com/hecticjeff/fancybox-rails.git'
   gem 'tinymce-rails'
 end

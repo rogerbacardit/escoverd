@@ -8,9 +8,3 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require resize_bg
-script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"
-script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"
-script type="text/javascript" src="fancybox/jquery.jquery.mousewheel-3.0.4.pack.js"
-script type="text/javascript" src="fancybox/jquery.jquery.mousewheel-3.0.4.pack.js"
-script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.js"
-link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen"

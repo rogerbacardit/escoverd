@@ -34,6 +34,8 @@ group :production do
   gem 'fog'
 end
 
+gem 'sass-rails'
+
 group :assets do
   gem 'coffee-rails'
   gem 'uglifier'
@@ -42,8 +44,6 @@ group :assets do
   gem 'fancybox-rails', git: 'https://github.com/hecticjeff/fancybox-rails.git'
   gem 'tinymce-rails'
 end
-
-gem 'sass-rails'
 
 group :development do
   gem 'sqlite3'

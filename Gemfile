@@ -37,12 +37,9 @@ end
 gem 'sass-rails'
 
 group :assets do
-  gem 'coffee-rails'
   gem 'uglifier'
   gem 'jquery-rails'
   gem "compass-rails"
-  gem 'fancybox-rails', git: 'https://github.com/hecticjeff/fancybox-rails.git'
-  gem 'tinymce-rails'
 end
 
 group :development do

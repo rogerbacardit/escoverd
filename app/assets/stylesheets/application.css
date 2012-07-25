@@ -8,4 +8,5 @@
  *= require animation
  *= require contact_form
  *= require layout
+ *= require_tree .
 */

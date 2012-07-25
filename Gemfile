@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.1.2'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -35,15 +35,15 @@ group :production do
 end
 
 group :assets do
-  gem 'coffee-rails', '~> 3.1.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'coffee-rails'
+  gem 'uglifier'
   gem 'jquery-rails'
   gem "compass-rails"
   gem 'fancybox-rails', git: 'https://github.com/hecticjeff/fancybox-rails.git'
   gem 'tinymce-rails'
 end
 
-gem 'sass-rails',   '~> 3.1.4'
+gem 'sass-rails'
 
 group :development do
   gem 'sqlite3'
